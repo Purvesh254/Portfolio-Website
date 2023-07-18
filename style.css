@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: black;
+    color: #cdcdff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 111;
+    line-height: 80px;
+    padding: 8px 8px;
+    background-color: black;
+}
+.logo{
+    color: #2386d1;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    cursor: pointer;
+    margin-left: 70px;
+    letter-spacing: 2px;
+}
+.navitems{
+    display: flex;
+    margin-right: 60px;
+}
+.navitems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navitems li a{
+    text-decoration: none;
+    color: #BDBDDD;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position: relative;
+    /* padding-bottom: 5px; */
+}
+.navitems li a::after{
+    content: "";
+    position: absolute;
+    background-color: #2386d1;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navitems li a:hover{
+    color: #2386d1;
+    /* border-bottom: 3px solid #2386d1; */
+}
+.navitems li a:hover::after{
+    width: 100%;
+}
+.container-content{
+    position: relative;
+    display: block;
+    top: 38%;
+}
+.container-content .text{
+    color: #cdcdff;
+    display: flex;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* margin-left: 200px; */
+    position: relative;
+    justify-content: center;
+}
+.container-content .second{
+    color: #2386d1;
+}
+.container-content p{
+    display: block;
+    max-width: 800px;
+    color: #cdcdff;
+    margin-left: 300px;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    position: relative;
+}
+.container-content .btn{
+    margin-top: 35px;
+    margin-left: 33%;
+}
+.container-content .btn{
+    width: 190px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    background-color: black;
+    color: #2386d1;
+    border: 1px solid #2386d1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container-content .btn:hover{
+    background-color: #2386d1;
+    color: black;
+}
+.container-content .btnn{
+    height: 50px;
+    width: 190px;
+    background-color: black;
+    color: #2386d1;
+    border: 1px solid #2386d1;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 32px;
+    cursor: pointer;
+}
+.container-content .btnn:hover{
+    background-color: #2386d1;
+    color: black;
+}
+.wrapper{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    /* margin-top: 300px; */
+}
+.wrapper h1{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+    /* margin-right: 7%; */
+}
+.wrapper .grid-text{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #2386d1;
+    position: relative;
+    /* margin-right: 55px; */
+    text-transform: uppercase;
+    text-align: center;
+}
+.wrapper .grid-block{
+    background-color: black;
+    width: 60%;
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    padding: 10px;
+    margin: 15% 22% ;
+    row-gap: 45px;
+}
+.wrapper .grid-block div{
+    height: 106px;
+    width: 130px;
+    border: 1px solid #2386d1;
+    display: flex;
+    column-gap: 20px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.wrapper .grid-block div:hover{
+    box-shadow: 5px 7px 25px #2386d1;
+}
+.wrapper .grid-block img{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+.projects{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: block;
+}
+.projects h1{
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 20%;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #2386d1;
+    text-transform: uppercase;
+}
+.projects .project1{
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    padding: 20px;
+    margin-top: 13%;
+    margin-bottom: 13%;
+}
+.projects .project1 img{
+    width: 60%;
+    height: 400px;
+    border: 2px solid #2386d1;
+    border-radius: 5px;
+    float: left;
+}
+.project1 .content {
+    width: 35%;
+    height: 350px;
+    padding: 20px;
+    float: left;
+    margin-top: 30px;
+    /* text-align: center; */
+    /* border: 1px solid #2386d1; */
+    margin-left: 35px;
+}
+.project1 .content h2{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    color: #2386d1;
+}
+.project1 .content p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 15px 10px;
+    justify-content: center;
+    padding: 25px;
+    color: #cdcdff;
+}
+.content .demo{
+    width: 190px;
+    height: 50px;
+    display: block;
+    border: 1px solid #2386d1;
+    background-color: black;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-left: 100px;
+    cursor: pointer;
+    color: #2386d1;
+}
+/* .content .demo a{
+    text-decoration: none;
+    color: #2386d1;
+} */
+.content .demo:hover{
+    background-color: #2386d1;
+    color: black;
+}
+/* .content .demo a:hover{
+    color: black;
+} */
+.projects .project2{
+    display: block;
+    max-width: 100%;
+    height: 70vh;
+    padding: 20px;
+    margin-top: 13%;
+    margin-bottom: 13%;
+}
+.projects .project2 img{
+    width: 60%;
+    height: 400px;
+    border: 2px solid #2386d1;
+    border-radius: 5px;
+    float: left;
+}
+.project2 .content2 {
+    width: 35%;
+    height: 350px;
+    padding: 20px;
+    float: left;
+    margin-top: 30px;
+    /* text-align: center; */
+    /* border: 1px solid #2386d1; */
+    margin-left: 35px;
+}
+.project2 .content2 h2{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    color: #2386d1;
+}
+.project2 .content2 p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 15px 10px;
+    justify-content: center;
+    padding: 25px;
+    color: #cdcdff;
+}
+.content2 .demo{
+    width: 190px;
+    height: 50px;
+    display: block;
+    border: 1px solid #2386d1;
+    background-color: black;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-left: 100px;
+    cursor: pointer;
+    color: #2386d1;
+}
+.content2 .demo:hover{
+    background-color: #2386d1;
+    color: black;
+}
